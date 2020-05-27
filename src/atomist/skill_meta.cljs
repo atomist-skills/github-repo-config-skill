@@ -3,6 +3,6 @@
 
 (def module-name "github-repo-config-skill")
 (def path ".")
-(def version "0.1.2")
-(def tag "0.1.2")
-(def generated-at "2020-05-27T23:21:30Z")
+(def version "0.1.3")
+(def tag "0.1.3")
+(def generated-at "2020-05-27T23:35:49Z")
