@@ -1,4 +1,4 @@
 skill:
   package:
-    use: 'package-cljs-skill'
+    use: 'atomist/package-cljs-skill'
 
