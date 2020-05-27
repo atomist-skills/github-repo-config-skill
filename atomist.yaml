@@ -1,0 +1,4 @@
+skill:
+  package:
+    use: 'package-cljs-skill'
+
