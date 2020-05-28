@@ -3,3 +3,4 @@ package:
   type: 'atomist/npm-skill`
   parameters:
     command: 'npm ci && npm run build && npm run bundle'
+ 
