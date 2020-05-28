@@ -14,7 +14,7 @@
   {:extra-deps {cljfmt {:mvn/version "0.6.7"}},
    :main-opts ["-m" "cljfmt.main" "fix" "src" "test"]},
   :bundle
-  {:extra-deps {com.atomist/package-cljs-skill {:mvn/version "0.2.47"}}
+  {:extra-deps {com.atomist/package-cljs-skill {:mvn/version "0.2.48"}}
    :main-opts ["-m" "atomist.functions.bundle"]}
   :version
   {:extra-deps {metav {:git/url "https://github.com/slimslenderslacks/metav.git"
