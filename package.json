@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "build:watch": "shadow-cljs watch dev",
-    "build": "shadow-cljs release release"
+    "build": "shadow-cljs release release",
+    "bundle": "clj -Abundle"
   },
   "dependencies": {
     "tmp": "^0.2.1",
