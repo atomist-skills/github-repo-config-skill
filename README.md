@@ -6,6 +6,7 @@ Applies standard config policies to all GitHub Repositories.
 
 # What it's useful for
 
+Select Repositories by Topic, and apply a standard configuration (ie disable wikis or issues).
 
 # Before you get started
 

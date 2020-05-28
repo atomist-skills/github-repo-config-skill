@@ -1,10 +1,13 @@
-// throw if Repo config is invalid
+// throw if Repo config is not valid
 //   - this will be called only once per skill invocation
 function validate (config) {
-    console.info("config has ", config);
+    console.info("config: ", config);
+    // throw "invalid config";
 }
 
-// callback will apply the change to GitHub using Atomist GitHub Application creds
+// ready to apply a config to a Repo
+// callback will apply the change - call if you want to proceed
+// otherwise, it's a preview of what would happen
 async function applyConfig ({ref, config, topics}, callback) {
     console.info(`apply config to ${ref.owner}/${ref.repo}`);
     //await callback();
