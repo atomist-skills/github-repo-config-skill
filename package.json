@@ -4,7 +4,8 @@
   "scripts": {
     "build:watch": "shadow-cljs watch dev",
     "build": "shadow-cljs release release",
-    "bundle": "clj -Abundle"
+    "bundle": "clj -Abundle",
+    "skill": "npm run build && npm run bundle"
   },
   "dependencies": {
     "tmp": "^0.2.1",
