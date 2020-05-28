@@ -22,24 +22,22 @@ When the optional Slack integration is enabled, users can interact with this ski
 
 1. **Configure Topic Selection** 
     
-    Select the set of Repositories, by Topic, that should use this Configuration.
+    Choose a Repo Topic.  This will be used to select the set of Repositories to configure. 
 
     ![screenshot1](docs/images/screenshot1.png)
 
-2. **Determine repository scope**
-
-    ![Repository filter](docs/images/repo-filter.png)
-
-    By default, this skill will be enabled for all repositories in all organizations you have connected.
-
-    To restrict the organizations or specific repositories on which the skill will run, you can explicitly choose 
-    organization(s) and repositories.
-
-3.  **Configure your Desired Repository Configuration**
+2.  **Configure your Desired Repository Configuration**
 
     Please see [GitHub documentation for supported options](https://developer.github.com/v3/repos/#update-a-repository)
+    
+    ![screenshot2](docs/images/screenshot2.png)
+    
+3.  **Optionally create a cron schedule**
 
-4.  
+    Re-apply this configuration periodically to ensure it stays in sync.
+    
+    ![screenshot3](docs/images/screenshot3.png)    
+
 
 ## How to use Git Repo Config
 
