@@ -26,24 +26,24 @@
                         :placeHolder
                         "topicname",
                         :required true}}
-              :string {:description
-                       "see [documentation](https://developer.github.com/v3/repos/#update-a-repository)",
-                       :displayName "GitHub Repo Config",
-                       :name "config",
-                       :lineStyle "multiple",
-                       :placeHolder
-                       "{\"has_wiki\": false, \"has_issues\": false}",
-                       :required true}
-              :schedule {:description "check regularly"
-                         :displayName "schedule"
-                         :name "schedule"
-                         :defaultValue "0 */6 * * *"
-                         :placeHolder "0 */6 * * *"
-                         :required true}
-              :repoFilter {:description "Select repositories that should have the standard set of Labels"
-                           :displayName "Repo Filter"
-                           :name "RepoFilter"
-                           :required false}]
+              {:string {:description
+                        "see [documentation](https://developer.github.com/v3/repos/#update-a-repository)",
+                        :displayName "GitHub Repo Config",
+                        :name "config",
+                        :lineStyle "multiple",
+                        :placeHolder
+                        "{\"has_wiki\": false, \"has_issues\": false}",
+                        :required true}}
+              {:schedule {:description "check regularly"
+                          :displayName "schedule"
+                          :name "schedule"
+                          :defaultValue "0 */6 * * *"
+                          :placeHolder "0 */6 * * *"
+                          :required true}}
+              {:repoFilter {:description "Select repositories that should have the standard set of Labels"
+                            :displayName "Repo Filter"
+                            :name "RepoFilter"
+                            :required false}}]
  :commands [{:name "sync"
              :description "check all the Repo configs"
              :pattern "^sync repo config.*$"}]}
