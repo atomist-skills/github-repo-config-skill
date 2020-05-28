@@ -10,7 +10,7 @@ function validate (config) {
 // otherwise, it's a preview of what would happen
 async function applyConfig ({ref, config, topics}, callback) {
     console.info(`apply config to ${ref.owner}/${ref.repo}`);
-    //await callback();
+    await callback();
 }
 
 exports.validate = validate
