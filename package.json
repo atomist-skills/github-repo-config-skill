@@ -1,26 +1,15 @@
 {
-  "name": "atomist-skill",
+  "name": "@atomist/git-repo-config-skill",
   "version": "0.1.0",
   "scripts": {
-    "build:watch": "shadow-cljs watch dev",
-    "build": "shadow-cljs release release",
-    "bundle": "clj -Abundle",
-    "skill": "npm run build && npm run bundle"
+    "skill": "bundle",
+    "validateRepo": "validate"
   },
   "dependencies": {
-    "tmp": "^0.2.1",
-    "@atomist/skill-logging": "0.1.0-master.20200316180914",
-    "fast-glob": "^3.2.2",
-    "@google-cloud/pubsub": "^1.0.0",
-    "js-yaml": "^3.13.1",
-    "shell-quote": "^1.7.2",
-    "iconv-lite": "^0.4.19",
-    "@google-cloud/storage": "^4.1.3"
+    "@atomist/api-cljs": "^0.4.25"
   },
+  "main": "index.js",
   "devDependencies": {
-    "shadow-cljs": "^2.8.69",
-    "source-map-support": "0.5.9",
-    "ws": "^7.3.0"
-  },
-  "main": "app.js"
+    "@atomist/skill-bundler": "^0.1.8"
+  }
 }
