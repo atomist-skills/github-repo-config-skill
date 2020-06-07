@@ -1,6 +1,6 @@
-# `atomist-skill`
+# `@atomist/git-repo-config-skill`
 
-This page details all runtime OSS dependencies of `atomist-skill`.
+This page details all runtime OSS dependencies of `@atomist/git-repo-config-skill`.
 
 ## Licenses
 
@@ -13,8 +13,9 @@ This page details all runtime OSS dependencies of `atomist-skill`.
 |[BSD-3-Clause](#bsd-3-clause)|14|
 |[CC0-1.0](#cc0-10)|1|
 |[GPL-2.0](#gpl-20)|1|
-|[ISC](#isc)|18|
-|[MIT](#mit)|120|
+|[ISC](#isc)|19|
+|[MIT](#mit)|119|
+|[UNKNOWN](#unknown)|1|
 
 #### Apache-2.0
 Apache License 2.0 - [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
@@ -28,9 +29,9 @@ Apache License 2.0 - [http://www.apache.org/licenses/LICENSE-2.0](http://www.apa
 |`@google-cloud/precise-date`|`1.0.3`|Google Inc.|[https://github.com/googleapis/nodejs-precise-date](https://github.com/googleapis/nodejs-precise-date)|
 |`@google-cloud/projectify`|`1.0.4`|Google Inc.|[https://github.com/googleapis/nodejs-projectify](https://github.com/googleapis/nodejs-projectify)|
 |`@google-cloud/promisify`|`1.0.4`|Google Inc.|[https://github.com/googleapis/nodejs-promisify](https://github.com/googleapis/nodejs-promisify)|
-|`@google-cloud/pubsub`|`1.7.2`|Google Inc.|[https://github.com/googleapis/nodejs-pubsub](https://github.com/googleapis/nodejs-pubsub)|
+|`@google-cloud/pubsub`|`1.7.3`|Google Inc.|[https://github.com/googleapis/nodejs-pubsub](https://github.com/googleapis/nodejs-pubsub)|
 |`@google-cloud/storage`|`4.7.0`|Google Inc.|[https://github.com/googleapis/nodejs-storage](https://github.com/googleapis/nodejs-storage)|
-|`@grpc/grpc-js`|`0.7.9`|Google Inc.|[https://github.com/grpc/grpc-node/tree/master/packages/grpc-js](https://github.com/grpc/grpc-node/tree/master/packages/grpc-js)|
+|`@grpc/grpc-js`|`1.0.5`|Google Inc.|[https://github.com/grpc/grpc-node/tree/master/packages/grpc-js](https://github.com/grpc/grpc-node/tree/master/packages/grpc-js)|
 |`@grpc/proto-loader`|`0.5.4`|Google Inc.|[https://github.com/grpc/grpc-node](https://github.com/grpc/grpc-node)|
 |`@opencensus/core`|`0.0.20`|Google Inc.|[https://github.com/census-instrumentation/opencensus-node](https://github.com/census-instrumentation/opencensus-node)|
 |`@opencensus/propagation-stackdriver`|`0.0.20`|OpenCensus Authors|[https://github.com/census-instrumentation/opencensus-node](https://github.com/census-instrumentation/opencensus-node)|
@@ -41,7 +42,7 @@ Apache License 2.0 - [http://www.apache.org/licenses/LICENSE-2.0](http://www.apa
 |`gaxios`|`3.0.3`|Google, LLC|[https://github.com/googleapis/gaxios](https://github.com/googleapis/gaxios)|
 |`gcp-metadata`|`3.5.0`|Stephen Sawchuk|[https://github.com/googleapis/gcp-metadata](https://github.com/googleapis/gcp-metadata)|
 |`google-auth-library`|`5.10.1`|Google Inc.|[https://github.com/googleapis/google-auth-library-nodejs](https://github.com/googleapis/google-auth-library-nodejs)|
-|`google-gax`|`1.15.2`|Google API Authors|[https://github.com/googleapis/gax-nodejs](https://github.com/googleapis/gax-nodejs)|
+|`google-gax`|`1.15.3`|Google API Authors|[https://github.com/googleapis/gax-nodejs](https://github.com/googleapis/gax-nodejs)|
 |`hex2dec`|`1.1.2`||[https://github.com/donmccurdy/hex2dec](https://github.com/donmccurdy/hex2dec)|
 |`long`|`4.0.0`|Daniel Wirtz|[https://github.com/dcodeIO/long.js](https://github.com/dcodeIO/long.js)|
 |`teeny-request`|`6.0.3`|fhinkel|[https://github.com/googleapis/teeny-request](https://github.com/googleapis/teeny-request)|
@@ -111,6 +112,7 @@ ISC License - [https://www.isc.org/downloads/software-support-policy/isc-license
 |`rimraf`|`3.0.2`|Isaac Z. Schlueter|[https://github.com/isaacs/rimraf](https://github.com/isaacs/rimraf)|
 |`semver`|`5.7.1`||[https://github.com/npm/node-semver](https://github.com/npm/node-semver)|
 |`semver`|`6.3.0`||[https://github.com/npm/node-semver](https://github.com/npm/node-semver)|
+|`semver`|`7.3.2`||[https://github.com/npm/node-semver](https://github.com/npm/node-semver)|
 |`signal-exit`|`3.0.3`|Ben Coe|[https://github.com/tapjs/signal-exit](https://github.com/tapjs/signal-exit)|
 |`wrappy`|`1.0.2`|Isaac Z. Schlueter|[https://github.com/npm/wrappy](https://github.com/npm/wrappy)|
 |`write-file-atomic`|`3.0.3`|Rebecca Turner|[https://github.com/npm/write-file-atomic](https://github.com/npm/write-file-atomic)|
@@ -126,10 +128,9 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`@nodelib/fs.walk`|`1.2.4`||[https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk](https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk)|
 |`@tootallnate/once`|`1.1.2`|Nathan Rajlich|[https://github.com/TooTallNate/once](https://github.com/TooTallNate/once)|
 |`@types/duplexify`|`3.6.0`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
-|`@types/fs-extra`|`8.1.0`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
+|`@types/fs-extra`|`8.1.1`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`@types/long`|`4.0.1`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
-|`@types/node`|`12.12.37`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
-|`@types/node`|`13.13.2`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
+|`@types/node`|`13.13.10`||[https://github.com/DefinitelyTyped/DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)|
 |`abort-controller`|`3.0.0`|Toru Nagashima|[https://github.com/mysticatea/abort-controller](https://github.com/mysticatea/abort-controller)|
 |`agent-base`|`6.0.0`|Nathan Rajlich|[https://github.com/TooTallNate/node-agent-base](https://github.com/TooTallNate/node-agent-base)|
 |`argparse`|`1.0.10`||[https://github.com/nodeca/argparse](https://github.com/nodeca/argparse)|
@@ -162,7 +163,7 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`gcs-resumable-upload`|`2.3.3`|Stephen Sawchuk|[https://github.com/googleapis/gcs-resumable-upload](https://github.com/googleapis/gcs-resumable-upload)|
 |`google-p12-pem`|`2.0.4`|Ryan Seys|[https://github.com/google/google-p12-pem](https://github.com/google/google-p12-pem)|
 |`gtoken`|`4.1.4`|Google, LLC|[https://github.com/google/node-gtoken](https://github.com/google/node-gtoken)|
-|`hash-stream-validation`|`0.2.2`|Stephen Sawchuk|[https://github.com/stephenplusplus/hash-stream-validation](https://github.com/stephenplusplus/hash-stream-validation)|
+|`hash-stream-validation`|`0.2.3`|Stephen Sawchuk|[https://github.com/stephenplusplus/hash-stream-validation](https://github.com/stephenplusplus/hash-stream-validation)|
 |`http-proxy-agent`|`4.0.1`|Nathan Rajlich|[https://github.com/TooTallNate/node-http-proxy-agent](https://github.com/TooTallNate/node-http-proxy-agent)|
 |`https-proxy-agent`|`5.0.0`|Nathan Rajlich|[https://github.com/TooTallNate/node-https-proxy-agent](https://github.com/TooTallNate/node-https-proxy-agent)|
 |`iconv-lite`|`0.4.24`|Alexander Shtuchkin|[https://github.com/ashtuchkin/iconv-lite](https://github.com/ashtuchkin/iconv-lite)|
@@ -176,7 +177,7 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`is-typedarray`|`1.0.0`|Hugh Kennedy|[https://github.com/hughsk/is-typedarray](https://github.com/hughsk/is-typedarray)|
 |`is`|`3.3.0`|Enrico Marino|[https://github.com/enricomarino/is](https://github.com/enricomarino/is)|
 |`isarray`|`1.0.0`|Julian Gruber|[https://github.com/juliangruber/isarray](https://github.com/juliangruber/isarray)|
-|`js-yaml`|`3.13.1`|Vladimir Zapparov|[https://github.com/nodeca/js-yaml](https://github.com/nodeca/js-yaml)|
+|`js-yaml`|`3.14.0`|Vladimir Zapparov|[https://github.com/nodeca/js-yaml](https://github.com/nodeca/js-yaml)|
 |`json-bigint`|`0.3.0`|Andrey Sidorov|[https://github.com/sidorares/json-bigint](https://github.com/sidorares/json-bigint)|
 |`jwa`|`2.0.0`|Brian J. Brennan|[https://github.com/brianloveswords/node-jwa](https://github.com/brianloveswords/node-jwa)|
 |`jws`|`4.0.0`|Brian J Brennan|[https://github.com/brianloveswords/node-jws](https://github.com/brianloveswords/node-jws)|
@@ -186,11 +187,11 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`lodash.snakecase`|`4.1.1`|John-David Dalton|[https://github.com/lodash/lodash](https://github.com/lodash/lodash)|
 |`make-dir`|`3.1.0`|Sindre Sorhus|[https://github.com/sindresorhus/make-dir](https://github.com/sindresorhus/make-dir)|
 |`map-obj`|`4.1.0`|Sindre Sorhus|[https://github.com/sindresorhus/map-obj](https://github.com/sindresorhus/map-obj)|
-|`merge2`|`1.3.0`||[https://github.com/teambition/merge2](https://github.com/teambition/merge2)|
+|`merge2`|`1.4.1`||[https://github.com/teambition/merge2](https://github.com/teambition/merge2)|
 |`micromatch`|`4.0.2`|Jon Schlinkert|[https://github.com/micromatch/micromatch](https://github.com/micromatch/micromatch)|
-|`mime-db`|`1.43.0`||[https://github.com/jshttp/mime-db](https://github.com/jshttp/mime-db)|
-|`mime-types`|`2.1.26`||[https://github.com/jshttp/mime-types](https://github.com/jshttp/mime-types)|
-|`mime`|`2.4.4`|Robert Kieffer|[https://github.com/broofa/node-mime](https://github.com/broofa/node-mime)|
+|`mime-db`|`1.44.0`||[https://github.com/jshttp/mime-db](https://github.com/jshttp/mime-db)|
+|`mime-types`|`2.1.27`||[https://github.com/jshttp/mime-types](https://github.com/jshttp/mime-types)|
+|`mime`|`2.4.6`|Robert Kieffer|[https://github.com/broofa/mime](https://github.com/broofa/mime)|
 |`mimic-fn`|`2.1.0`|Sindre Sorhus|[https://github.com/sindresorhus/mimic-fn](https://github.com/sindresorhus/mimic-fn)|
 |`ms`|`2.1.2`||[https://github.com/zeit/ms](https://github.com/zeit/ms)|
 |`node-fetch`|`2.6.0`|David Frank|[https://github.com/bitinn/node-fetch](https://github.com/bitinn/node-fetch)|
@@ -241,6 +242,12 @@ MIT License - [https://opensource.org/licenses/MIT](https://opensource.org/licen
 |`walkdir`|`0.4.1`|Ryan Day|[https://github.com/soldair/node-walkdir](https://github.com/soldair/node-walkdir)|
 |`xdg-basedir`|`4.0.0`|Sindre Sorhus|[https://github.com/sindresorhus/xdg-basedir](https://github.com/sindresorhus/xdg-basedir)|
 |`xtend`|`4.0.2`|Raynos|[https://github.com/Raynos/xtend](https://github.com/Raynos/xtend)|
+
+#### UNKNOWN
+
+| Name | Version | Publisher | Repository |
+|------|---------|-----------|------------|
+|`@atomist/api-cljs`|`0.4.25`|jim@atomist.com||
 
 ## Contact
 
