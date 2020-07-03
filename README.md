@@ -21,34 +21,33 @@ When the optional Slack integration is enabled, users can interact with this ski
 
 # How to configure
 
-1. **Configure Topic Selection** 
-    
-    Choose a Repo Topic.  This will be used to select the set of Repositories to configure. 
+1. **Configure Topic Selection**
+
+    Choose a Repo Topic. This will be used to select the set of Repositories to configure.
 
     ![screenshot1](docs/images/screenshot1.png)
 
-2.  **Configure your Desired Repository Configuration**
+2. **Configure your Desired Repository Configuration**
 
     Please see [GitHub documentation for supported options](https://developer.github.com/v3/repos/#update-a-repository)
-    
+
     ![screenshot2](docs/images/screenshot2.png)
-    
-3.  **Optionally create a cron schedule**
+
+3. **Optionally create a cron schedule**
 
     Re-apply this configuration periodically to ensure it stays in sync.
-    
-    ![screenshot3](docs/images/screenshot3.png)    
 
+    ![screenshot3](docs/images/screenshot3.png)
 
 ## How to use Git Repo Config
 
-1.  **Do nothing** 
+1.  **Do nothing**
 
     This is a background skill that converges configuration on a schedule.
 
 2.  **Run a sync from Slack**
 
-    Interactively kick off the Skill to synchronize your Repositories. 
+    Interactively kick off the Skill to synchronize your Repositories.
 
     ```
     @atomist sync repo config
@@ -59,7 +58,7 @@ When the optional Slack integration is enabled, users can interact with this ski
 ---
 
 Created by [Atomist][atomist].
-Need Help?  [Join our Slack workspace][slack].
+Need Help? [Join our Slack workspace][slack].
 
-[atomist]: https://atomist.com/ (Atomist - How Teams Deliver Software)
-[slack]: https://join.atomist.com/ (Atomist Community Slack) 
+[atomist]: https://atomist.com/ "Atomist - How Teams Deliver Software"
+[slack]: https://join.atomist.com/ "Atomist Community Slack"
