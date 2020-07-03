@@ -1,0 +1,17 @@
+{:description "This section supports markdown",
+ :license "unknown",
+ :displayName "git repo config skill",
+ :name "git-repo-config-skill",
+ :author "unknown",
+ :iconUrl
+ "https://raw.githubusercontent.com/cljs/logo/master/cljs.png",
+ :homepageUrl
+ "https://github.com/atomist-skills/git-repo-config-skill",
+ :namespace "atomist",
+ :artifacts
+ {:gcf
+  [{:name "package-cljs-skill",
+    :entryPoint "eventhandler",
+    :memory 512, 
+    :runtime "nodejs10", 
+    :timeout 60}]}}

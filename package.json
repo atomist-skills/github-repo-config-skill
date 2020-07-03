@@ -2,13 +2,16 @@
   "name": "@atomist/git-repo-config-skill",
   "version": "0.1.0",
   "scripts": {
-    "skill": "bundle",
-    "validateRepo": "validate"
+    "skill": "npm run build && npm run bundle",
+    "validateRepo": "validate",
+    "build:watch": "shadow-cljs watch dev",
+    "build": "shadow-cljs release release",
+    "bundle": "bundle"
   },
   "dependencies": {
     "@atomist/api-cljs": "^0.4.25"
   },
-  "main": "index.js",
+  "main": "node_modules/@atomist/api-cljs/app.js",
   "devDependencies": {
     "@atomist/skill-bundler": "^0.1.8"
   }
