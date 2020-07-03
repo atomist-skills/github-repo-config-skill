@@ -14,8 +14,8 @@ commands:
   - name: sync
     description: check all the Repo configs
     pattern: ^sync repo config.*$
-iconUrl: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
-homepageUrl: 'https://github.com/atomist-skills/git-repo-config-skill'
+iconUrl: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+homepageUrl: "https://github.com/atomist-skills/git-repo-config-skill"
 parameters:
   - string:
       description: list the Repo topic you use to set this policy
@@ -46,8 +46,7 @@ parameters:
       required: false
 artifacts:
   gcf:
-    -
-      entryPoint: eventhandler
+    - entryPoint: eventhandler
       runtime: nodejs10
       name: do-it-on-node
       memory: 512

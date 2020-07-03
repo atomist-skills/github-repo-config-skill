@@ -1,17 +1,17 @@
 subscription OnNewRepo {
-    Repo {
+  Repo {
+    id
+    name
+    org {
+      id
+      owner
+      scmProvider {
         id
-        name
-        org {
-            id
-            owner
-            scmProvider {
-                id
-                providerId
-                credential {
-                    secret
-                }
-            }
+        providerId
+        credential {
+          secret
         }
+      }
     }
+  }
 }
