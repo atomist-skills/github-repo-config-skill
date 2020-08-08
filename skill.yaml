@@ -1,7 +1,7 @@
 namespace: atomist
-name: git-repo-config-skill
-description: git repo config skill
-displayName: git repo config skill
+name: github-repo-config-skill
+description: github repo config skill
+displayName: github repo config skill
 license: unknown
 author: atomist
 resourceProviders:
@@ -21,7 +21,7 @@ commands:
     description: check all the Repo configs
     pattern: ^sync repo config.*$
 iconUrl: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-homepageUrl: "https://github.com/atomist-skills/git-repo-config-skill"
+homepageUrl: "https://github.com/atomist-skills/github-repo-config-skill"
 parameters:
   - string:
       description: list the Repo topic you use to set this policy
