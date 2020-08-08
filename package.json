@@ -2,10 +2,8 @@
   "name": "@atomist/git-repo-config-skill",
   "version": "0.1.0",
   "scripts": {
-    "skill": "npm run build && npm run bundle",
+    "skill": "npm run bundle",
     "validateRepo": "validate",
-    "build:watch": "shadow-cljs watch dev",
-    "build": "shadow-cljs release release",
     "bundle": "bundle"
   },
   "dependencies": {
