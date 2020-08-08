@@ -9,10 +9,10 @@
     "bundle": "bundle"
   },
   "dependencies": {
-    "@atomist/api-cljs": "^0.4.25"
+    "@atomist/api-cljs": "^0.4.79"
   },
   "main": "node_modules/@atomist/api-cljs/app.js",
   "devDependencies": {
-    "@atomist/skill-bundler": "^0.1.8"
+    "@atomist/skill-bundler": "^0.1.13"
   }
 }

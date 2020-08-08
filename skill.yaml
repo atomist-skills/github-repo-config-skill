@@ -19,7 +19,7 @@ homepageUrl: "https://github.com/atomist-skills/git-repo-config-skill"
 parameters:
   - string:
       description: list the Repo topic you use to set this policy
-      displayName: SELECT Topic
+      displayName: Choose Topic
       name: topic
       placeHolder: topicname
       required: true
