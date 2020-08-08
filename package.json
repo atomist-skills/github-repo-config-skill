@@ -4,13 +4,25 @@
   "scripts": {
     "skill": "npm run bundle",
     "validateRepo": "validate",
-    "bundle": "bundle"
+    "bundle": "bundle",
+    "atm:lint:prettier": "prettier --write"
   },
   "dependencies": {
     "@atomist/api-cljs": "^0.4.79"
   },
   "main": "node_modules/@atomist/api-cljs/app.js",
   "devDependencies": {
-    "@atomist/skill-bundler": "^0.1.13"
+    "@atomist/skill-bundler": "^0.1.13",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.@(graphql|json|markdown|yaml|yml|md)": "npm run atm:lint:prettier"
   }
 }
