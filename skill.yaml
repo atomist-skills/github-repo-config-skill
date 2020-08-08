@@ -10,6 +10,12 @@ resourceProviders:
     typeName: GitHubAppResourceProvider
     minRequired: 1
     maxAllowed: 1
+  - name: chat
+    displayName: Chat
+    typeName: ChatProvider
+    description: Chat
+    minRequired: 0
+    maxAllowed: 1
 commands:
   - name: sync
     description: check all the Repo configs

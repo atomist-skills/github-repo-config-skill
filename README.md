@@ -4,7 +4,9 @@
 
 # What it's useful for
 
-Select Repositories by Topic, and apply a standard configuration (ie disable wikis or issues).
+Choose a standard GitHub Repo configuration and apply it consistently across all 
+your repositories.
+
 The per Repo config options supported by GitHub are [documented here](https://developer.github.com/v3/repos/#update-a-repository
 ).  However, a good summary of the config options you can standardize is:
 
@@ -19,9 +21,9 @@ The per Repo config options supported by GitHub are [documented here](https://de
 | allow_rebase_merge |	boolean |	Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true. |
 | delete_branch_on_merge |	boolean |	Either true to allow automatically deleting head branches when pull requests are merged, or false to prevent automatic deletion. Default: false |
 
-A configuration does not have to select all of these options.  For example, user can create a configuration like 
+Each configuration of this skill can select a set of options above and apply to them to a set of repositories selected by Topic.  This will automation of statements like:
 
-> all Repos with the topic `TopicName` have wikis disabled, issues enabled, and only allow rebase merges.
+> all Repos with the topic `TopicName` should have wikis disabled, issues enabled, and only allow rebase merges.
 
 # Before you get started
 
