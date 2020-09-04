@@ -1,6 +1,7 @@
 namespace: atomist
 name: github-repo-config-skill
 displayName: GitHub Repo Config Skill
+description: Share configurations across Repos
 license: unknown
 author: atomist
 triggers:
