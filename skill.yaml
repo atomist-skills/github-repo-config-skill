@@ -7,7 +7,6 @@ author: atomist
 triggers:
   - OnNewRepo
   - OnSchedule
-  - OnAnyPush
 resourceProviders:
   - name: github
     description: GitHub
@@ -42,25 +41,13 @@ parameters:
       lineStyle: multiple
       placeHolder: '{"has_wiki": false, "has_issues": false}'
       required: true
-  - string:
-      description: enable branch protection rules for branches matching this pattern
-      displayName: Branch pattern for configuring branch protection rules
-      name: branchPattern
-      placeHolder:
-      required: false
-  - string:
-      description: branch protection rule
-      name: branchProtectionRule
-      lineStyle: multiple
-      placeHolder: '{"required_status_checks": {"strict": true, "contexts": ["lein test","github-secret-scanner-skill"]}}'
-      required: false
   - schedule:
       description: check regularly
       displayName: schedule
       name: schedule
       defaultValue: 0 */6 * * *
       placeHolder: 0 */6 * * *
-      required: true
+      required: false
   - repoFilter:
       description: Select repositories that should have the standard set of Labels
       displayName: Repo Filter

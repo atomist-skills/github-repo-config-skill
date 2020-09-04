@@ -8,15 +8,6 @@ var handleRepo = async function(repo, config, topic) {
   return true;
 }
 
-var convergeBranchRules = async function(request, branch, repo) {
-  if (request.topic && repo.topics.includes(request.topic) 
-                    && request.branchPattern 
-                    && branch.match(new RegExp(request.branchPattern))) {
-    await repo.branchProtectionRule( branch, JSON.parse(request.branchProtectionRule));
-  }
-  return true;
-}
-
 exports.handler = api.handler(
  {
     sync: async (request) => {
@@ -33,11 +24,6 @@ exports.handler = api.handler(
     OnNewRepo: async (request) => {
       await request.withRepo(async repo => {
         return await handleRepo(repo, request.repoConfig, request.topic);
-      });
-    },
-    OnAnyPush: async (request) => {
-      await request.withRepo(async repo => {
-        return await convergeBranchRules(request, request.data.Push[0].branch, repo);
       });
     }
  }
