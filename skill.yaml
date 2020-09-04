@@ -1,9 +1,12 @@
 namespace: atomist
 name: github-repo-config-skill
-description: github repo config skill
-displayName: github repo config skill
+displayName: GitHub Repo Config Skill
 license: unknown
 author: atomist
+triggers:
+  - OnNewRepo
+  - OnSchedule
+  - OnAnyPush
 resourceProviders:
   - name: github
     description: GitHub
@@ -34,10 +37,22 @@ parameters:
         see
         [documentation](https://developer.github.com/v3/repos/#update-a-repository)
       displayName: GitHub Repo Config
-      name: config
+      name: repoConfig
       lineStyle: multiple
       placeHolder: '{"has_wiki": false, "has_issues": false}'
       required: true
+  - string:
+      description: enable branch protection rules for branches matching this pattern
+      displayName: Branch pattern for configuring branch protection rules
+      name: branchPattern
+      placeHolder:
+      required: false
+  - string:
+      description: branch protection rule
+      name: branchProtectionRule
+      lineStyle: multiple
+      placeHolder: '{"required_status_checks": {"strict": true, "contexts": ["lein test","github-secret-scanner-skill"]}}'
+      required: false
   - schedule:
       description: check regularly
       displayName: schedule
