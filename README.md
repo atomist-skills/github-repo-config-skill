@@ -7,7 +7,9 @@
 Choose a standard GitHub Repo configuration and apply it consistently across all
 your repositories.
 
-The per Repo config options supported by GitHub are [documented here](https://developer.github.com/v3/repos/#update-a-repository). However, a good summary of the config options you can standardize is:
+The per Repo config options supported by GitHub are
+[documented here](https://developer.github.com/v3/repos/#update-a-repository).
+However, a good summary of the config options you can standardize is:
 
 | Name                   | Type    | Description                                                                                                                                                                                                                                                       |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,9 +22,12 @@ The per Repo config options supported by GitHub are [documented here](https://de
 | allow_rebase_merge     | boolean | Either true to allow rebase-merging pull requests, or false to prevent rebase-merging. Default: true.                                                                                                                                                             |
 | delete_branch_on_merge | boolean | Either true to allow automatically deleting head branches when pull requests are merged, or false to prevent automatic deletion. Default: false                                                                                                                   |
 
-Each configuration of this skill can select a set of options above and apply to them to a set of repositories selected by Topic. This will automation of statements like:
+Each configuration of this skill can select a set of options above and apply to
+them to a set of repositories selected by Topic. This will automation of
+statements like:
 
-> all Repos with the topic `TopicName` should have wikis disabled, issues enabled, and only allow rebase merges.
+> all Repos with the topic `TopicName` should have wikis disabled, issues
+> enabled, and only allow rebase merges.
 
 # Before you get started
 
@@ -33,19 +38,22 @@ Connect and configure these integrations:
 
 The **GitHub** integration must be configured in order to use this skill.
 
-When the optional Slack integration is enabled, users can interact with this skill directly from Slack.
+When the optional Slack integration is enabled, users can interact with this
+skill directly from Slack.
 
 # How to configure
 
 1. **Configure Topic Selection**
 
-    Choose a Repo Topic. This will be used to select the set of Repositories to configure.
+    Choose a Repo Topic. This will be used to select the set of Repositories to
+    configure.
 
     ![screenshot1](docs/images/screenshot1.png)
 
 2. **Configure your Desired Repository Configuration**
 
-    Please see [GitHub documentation for supported options](https://developer.github.com/v3/repos/#update-a-repository)
+    Please see
+    [GitHub documentation for supported options](https://developer.github.com/v3/repos/#update-a-repository)
 
     ![screenshot2](docs/images/screenshot2.png)
 
@@ -60,7 +68,8 @@ When the optional Slack integration is enabled, users can interact with this ski
 -   **Using a Cron schedule**
 
     This skill can iterate over all of your Repos on a Schedule.  
-    For Repos marked with the appropriate Topic, the configuration will be applied.
+    For Repos marked with the appropriate Topic, the configuration will be
+    applied.
 
 -   **Run a sync from Slack**
 
@@ -74,8 +83,7 @@ When the optional Slack integration is enabled, users can interact with this ski
 
 ---
 
-Created by [Atomist][atomist].
-Need Help? [Join our Slack workspace][slack].
+Created by [Atomist][atomist]. Need Help? [Join our Slack workspace][slack].
 
 [atomist]: https://atomist.com/ "Atomist - How Teams Deliver Software"
 [slack]: https://join.atomist.com/ "Atomist Community Slack"
