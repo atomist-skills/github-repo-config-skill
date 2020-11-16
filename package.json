@@ -1,16 +1,28 @@
 {
-  "name": "@atomist/git-repo-config-skill",
+  "name": "@atomist/github-repo-config-skill",
   "version": "0.1.0",
+  "homepage": "https://github.com/atomist-skills/github-repo-config-skill",
+  "license": "Apache-2.0",
+  "author": {
+    "email": "oss@atomist.com",
+    "name": "Atomist, Inc.",
+    "url": "https://atomist.com"
+  },
+  "main": "node_modules/@atomist/api-cljs/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomist-skills/github-repo-config-skill.git"
+  },
   "scripts": {
-    "skill": "npm run bundle",
-    "validateRepo": "validate",
+    "atm:lint:prettier": "prettier --write",
     "bundle": "bundle",
-    "atm:lint:prettier": "prettier --write"
+    "gql:gen": "atm-skill gql-generate",
+    "skill": "npm run bundle",
+    "validateRepo": "validate"
   },
   "dependencies": {
     "@atomist/api-cljs": "^0.4.120"
   },
-  "main": "node_modules/@atomist/api-cljs/app.js",
   "devDependencies": {
     "@atomist/skill-bundler": "^0.1.35",
     "husky": "^4.3.0",
